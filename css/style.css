@@ -1,0 +1,346 @@
+@font-face {
+    font-family: 'SFCompactDisplayBold';
+    src: url('../tipografia/SF-Compact-Display-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SFCompactDisplayHeavy';
+    src: url('../tipografia/SF-Compact-Display-Heavy.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SFCompactDisplayRegular';
+    src: url('../tipografia/sf-compact-display-regular.otf') format('opentype');
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+#titulo-cabecera {
+    font-size: 30pt;
+    text-decoration: none;
+    color: black;
+    font-family: SFCompactDisplayBold;
+}
+
+#main-titulo {
+    color: #FB9EA8;
+    font-family: SFCompactDisplayBold;
+    font-size: 25pt;
+}
+
+/* DESKTOP */
+@media (min-width: 1200px) {
+
+    body {
+        background-color: #0D0B0C;
+    }
+
+    #cabecera-derecha {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 1px solid black;
+    }
+
+    #cabecera-izquierda {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 20px;
+        border-bottom: 1px solid black;
+    }
+
+    .enlace-menu {
+        font-size: 17pt;
+        text-decoration: none;
+        color: black;
+        font-family: SFCompactDisplayHeavy;
+        margin: 20px;
+    }
+
+    #enlace-menu-selected {
+        font-size: 17pt;
+        text-decoration: none;
+        color: #F7BECB;
+        font-family: SFCompactDisplayHeavy;
+        margin: 20px;
+    }
+    
+    .enlace-menu:hover {
+        color: #F7BECB;
+    }
+
+    #main-body {
+        background-image: url(../assets/main.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #main-section-izquierda {
+        width: 50%;
+        padding: 20px;
+        color: white;
+        font-family: SFCompactDisplayRegular;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #section-izquierda-interior {
+        width: 45%;
+    }
+
+    #section-izquierda-interior-logo-tablet {
+        display: none;
+    }
+
+    #main-section-derecha {
+        width: 50%;
+    }
+
+    #service-body {
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #servide-section-cabecera {
+        width: 100%;
+        background-image: url(../assets/cabecera_servicios.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #service-section-izquierda {
+        width: 50%;
+        background-color: white;
+    }
+
+    #service-section-derecha {
+        width: 50%;
+        background-color: white;
+    }
+
+
+}
+
+/* "TABLET" */
+@media (min-width: 450px) and (max-width: 1200px) {
+    #cabecera-derecha {
+        width: 20%;
+        /* min-height: 100px; */ /* Test */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 1px solid black; /* Test */
+    }
+
+    #cabecera-izquierda {
+        width: 80%;
+        /* min-height: 100px; */ /* Test */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 20px;
+        border-bottom: 1px solid black;  /* Test */
+    }
+
+    .enlace-menu {
+        font-size: 17pt;
+        text-decoration: none;
+        color: black;
+        font-family: SFCompactDisplayHeavy;
+        margin: 20px;
+    }
+
+    #enlace-menu-selected {
+        font-size: 17pt;
+        text-decoration: none;
+        color: #F7BECB;
+        font-family: SFCompactDisplayHeavy;
+        margin: 20px;
+    }
+    
+    .enlace-menu:hover {
+        color: #F7BECB;
+    }
+
+    #main-body {
+        background-color: black;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #main-section-izquierda {
+        width: 60%;
+        padding: 20px;
+        color: white;
+        font-family: SFCompactDisplayRegular;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 50px;
+    }
+
+    #section-izquierda-interior {
+        width: 80%;
+    }
+
+    #section-izquierda-interior-logo-tablet {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #izquierda-interior-logo {
+        width: 30%;
+        min-height: 100px;
+        max-height: 100px;
+        background-image: url(../assets/logo-rojo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 10px;
+    }
+
+    #izquierda-interior-texto {
+        width: 50%;
+        text-align: justify;
+    }
+
+    #main-section-derecha {
+        width: 40%;
+        background-image: url(../assets/tablet-lateral.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #pie-pagina {
+        width: 12%;
+        min-height: 100px;
+        max-height: 100px;
+        background-image: url(../assets/Logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+
+}
+
+/* SMARTPHONE */
+@media (max-width: 450px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    #cabecera-derecha {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main-titulo {
+        font-size: 22pt;
+    }
+
+    #cabecera-izquierda {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .enlace-menu {
+        font-size: 10pt;
+        width: auto;
+        text-decoration: none;
+        color: black;
+        font-family: SFCompactDisplayHeavy;
+        padding: 10px;
+    }
+
+    #enlace-menu-selected {
+        font-size: 10pt;
+        width: auto;
+        text-decoration: none;
+        color: #F7BECB;
+        font-family: SFCompactDisplayHeavy;
+        padding: 10px;
+    }
+
+    #main-body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #main-section-izquierda {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #section-izquierda-interior {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-family: SFCompactDisplayRegular;
+        text-align: justify;
+    }
+
+    #main-section-imagen-movil {
+        width: 100%;
+        height: 600px;
+        background-image: url(../assets/movil-principal.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+
+
+}
