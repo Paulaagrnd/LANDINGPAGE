@@ -113,7 +113,24 @@ header {
     }
 
     #section-izquierda-interior-logo-tablet {
-        display: none;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #izquierda-interior-texto {
+        width: 70%;
+    }
+
+    #izquierda-interior-logo {
+        width: 30%;
+        min-height: 100px;
+        max-height: 100px;
+        background-image: url(../assets/logo-rojo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 10px;
     }
 
     #main-section-derecha {
@@ -331,6 +348,23 @@ header {
         color: white;
         font-family: SFCompactDisplayRegular;
         text-align: justify;
+    }
+
+    #section-izquierda-interior-logo-tablet {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #izquierda-interior-logo {
+        width: 30%;
+        min-height: 70px;
+        max-height: 70px;
+        background-image: url(../assets/logo-rojo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 10px;
     }
 
     #main-section-imagen-movil {
